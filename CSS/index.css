@@ -1,0 +1,174 @@
+@charset "UTF-8";
+.inicial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vp;
+}
+
+.principal {
+  display: flex;
+  flex-basis: 75%;
+  flex-grow: 2;
+  flex-direction: column;
+  align-items: center;
+}
+.principal .principal__presentacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.principal .principal__presentacion .principal__tituloPresentacion {
+  width: 100%;
+}
+.principal .principal__presentacion .principal__imagenPresentacion {
+  width: 45%;
+  height: 200px;
+  display: inline-block;
+}
+.principal .principal__presentacion .principal__parrafoPresentacion {
+  flex-basis: 50%;
+  max-width: 100%;
+  text-align: justify;
+  line-height: 25px;
+  font-size: 25px;
+  display: inline-block;
+}
+.principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo {
+  color: #ffd900;
+  font-weight: bold;
+  font-size: 35px;
+}
+.principal .principal__prodDestacados {
+  width: 60%;
+}
+.principal .principal__prodDestacados .principal__verMas {
+  border: 0px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  vertical-align: bottom;
+  padding: 8px 0px;
+  text-decoration: none;
+}
+.principal .principal__prodDestacados .principal__verMas a:hover {
+  color: blue;
+  opacity: 0.5;
+}
+
+.experiencias {
+  margin-top: 20px;
+  margin-right: 10px;
+  flex-basis: 25%;
+  flex-grow: 1;
+}
+.experiencias .experiencias__contenedor {
+  position: sticky;
+  top: 3%;
+}
+.experiencias .experiencias__contenedor .experiencias__listado {
+  padding-left: 5px;
+  background-color: white;
+  padding: 5px;
+  margin-right: 5px;
+}
+.experiencias .experiencias__contenedor .experiencias__listado .experiencias__listadoItems {
+  border: dashed 4px yellow;
+  border-radius: 5%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  animation-name: bordeado;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+.experiencias .experiencias__contenedor .experiencias__listado .experiencias__listadoItems .experiencias__nombre {
+  color: #3af0f0;
+  font-weight: bold;
+  text-align: center;
+}
+.experiencias .experiencias__contenedor .experiencias__listado .experiencias__listadoItems .experiencias__descripcion {
+  color: darkslategray;
+  text-align: justify;
+}
+
+@keyframes bordeado {
+  0% {
+    border-style: dashed;
+  }
+  100% {
+    border-style: dotted;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .principal .principal__presentacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .principal .principal__presentacion .principal__tituloPresentacion {
+    width: 100%;
+  }
+  .principal .principal__presentacion .principal__imagenPresentacion {
+    width: 90%;
+    height: 150%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo--tamaño {
+    font-size: 25px;
+  }
+
+  .experiencias .experiencias__contenedor .experiencias__listadoItems {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .principal .principal__prodDestacados .principal__verMas {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section {
+    margin-left: 0px;
+  }
+
+  .experiencias {
+    display: none;
+  }
+
+  .inicial {
+    width: 75%;
+    height: 100vp;
+    display: inline-block;
+    justify-content: start;
+    vertical-align: top;
+    margin: 0px;
+  }
+
+  .principal {
+    margin: 0px;
+  }
+  .principal .principal__presentacion {
+    margin: 10px 0px 0px 0px;
+  }
+  .principal .principal__presentacion .principal__parrafoPresentacion {
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo {
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

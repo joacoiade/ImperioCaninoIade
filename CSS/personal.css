@@ -1,0 +1,148 @@
+.inicioPersonal{
+    margin:20px;
+}
+
+.personal{
+    width: 99%;
+    display: grid;   
+    grid-template-rows: 1fr, 2fr, 2fr, 2fr, 2fr;
+    grid-template-columns: repeat(6, 1fr);   
+    text-align: center; 
+}
+
+.personal article {
+    width: 95%;
+    border: yellow 3px double;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.personal .descripcion{
+    width: 82%;
+    padding-right: 1%;
+    padding-left: 1%;
+    display:flex;
+    flex-flow: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+.personal .imagenPersonal{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.personal img{
+    width: 100px;
+    height: 100px;  
+}
+
+.personal .personal__titulo{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    text-align: start;
+}
+
+.personal__personas{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#persona1, #persona3{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+#persona2 .imagenPersonal, #persona4 .imagenPersonal{
+    order: 2;
+}
+
+#persona2 .descripcion, #persona4 .descripcion{
+    order: 1;
+}
+
+@media only screen and (max-width: 1024px){
+    #persona1, #persona3, #persona2, #persona4{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .personal .descripcion{
+        width: 80%;
+    }
+
+    .personal__personas{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #persona1 .imagenPersonal, #persona2 .imagenPersonal, #persona3 .imagenPersonal, #persona4 .imagenPersonal{
+        order:1;
+    }
+
+    .personal__personas .descripcion{
+        order:2;
+    }
+
+    .personal .descripcion{
+        width: 90%;
+    }
+
+    .personal__personas h2{
+        font-size: 25px;
+    }
+
+    .personal__personas h3{
+        font-size: 15px;
+    }
+
+    .personal__personas p{
+        font-size: 13px;
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    
+    header{
+        height: 500px;
+    }
+
+    .personal__personas{
+        margin-top: 30px;
+    }
+
+    .personal__personas p{
+        display: none;
+    }
+
+    .inicioPersonal{
+        display: inline-block;
+        width: 75%;
+        vertical-align: top;
+        margin: 0px;
+    }
+
+    .personal .descripcion{
+        width: 50%;
+        text-align: center;
+    }
+
+    #persona2 .imagenPersonal, #persona4 .imagenPersonal{
+        order: 2;
+    }
+    
+    #persona2 .descripcion, #persona4 .descripcion{
+        order: 1;
+    }
+    
+    .personal__personas h2{
+        font-size: 16px;
+    }
+}

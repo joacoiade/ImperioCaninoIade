@@ -1,0 +1,103 @@
+.inicioContacto {
+  margin: 10px;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.contacto .contacto__consulta {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.contacto .contacto__consulta .contacto__formulario div label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.contacto .contacto__consulta .contacto__formulario div .contacto__seleccion {
+  width: 50%;
+}
+.contacto .contacto__consulta .contacto__formulario div .contacto__seleccion .contacto__option {
+  font-size: 15px;
+  font-weight: bold;
+}
+.contacto .contacto__consulta .contacto__formulario div .contacto__comentario {
+  width: 100%;
+  max-width: 450px;
+  height: 100px;
+}
+.contacto .contacto__consulta .contacto__formulario div .contacto__botones {
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 6px;
+}
+.contacto .contacto__consulta .contacto__formulario div .contacto__botones:hover {
+  border: white 2px solid;
+  font-size: 16px;
+  padding: 6px;
+  opacity: 0.5;
+}
+.contacto .contacto__consulta .contacto__formulario .contacto__contenedorBotones {
+  margin-top: 5px;
+}
+
+.ubicacion {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 330px;
+}
+.ubicacion .ubicacion__Contenedormapa .ubicacion__mapa {
+  width: 100%;
+  height: 330px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contacto {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .ubicacion {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .inicioContacto {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+  }
+
+  .contacto {
+    margin: 0px;
+  }
+  .contacto .contacto__consulta .contacto__formulario div label {
+    font-size: 15px;
+  }
+  .contacto .contacto__consulta .contacto__formulario div .contacto__botones {
+    font-size: 13px;
+  }
+  .contacto .contacto__consulta .contacto__formulario div .contacto__botones:hover {
+    font-size: 13px;
+  }
+  .contacto .contacto__consulta .contacto__formulario div .form-control {
+    height: 30px;
+  }
+  .contacto .contacto__consulta .contacto__formulario div .contacto__seleccion {
+    line-height: 15px;
+  }
+  .contacto .contacto__consulta .contacto__formulario div .contacto__comentario--altura {
+    height: 90px;
+  }
+}
+
+/*# sourceMappingURL=contacto.css.map */

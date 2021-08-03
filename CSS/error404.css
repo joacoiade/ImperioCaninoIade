@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(221, 219, 219);
+}
+
+.error404{
+    font-weight: bold;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.error404__contenedor{
+    height: 50%;
+    width: 100%;
+}
+
+.error404__contenedoresFila1{
+    height: 80%;
+    min-height: 200px;
+}
+
+.error404__contenedoresFila2{
+    height: 20%;
+    min-height: 30px;
+    border-top: black 1px solid;
+}
+
+.error404__imagen{
+    font-size: 150px;
+    color: black;
+}
+
+.error404__contenedorTexto{
+    text-align: left;
+}
+
+.error404__contenedorImagen{
+    text-align: right;
+    padding-right: 50px;
+}
+
+.error404__parrafoPagina{
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+
+.error404__parrafo404{
+    font-size: 120px;
+    font-family: fantasy;
+    color: cornflowerblue;
+    margin-bottom: 0px;
+    line-height: 100px;
+}
+
+.error404__parrafoError{
+    font-size: 35px;
+    color: crimson;
+    padding-left: 60px;
+    margin-bottom: 0px;
+}
+
+.error404__enlace{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    .error404__contenedor{
+        height: 70%;
+    }
+    
+    .error404__contenedoresFila1{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px 0px;
+    }
+
+    .error404__imagen{
+        font-size: 75px;
+    }
+
+    .error404__contenedorTexto{
+        text-align: center;
+        width: 100%;
+    }
+
+    .error404__parrafoPagina{
+        padding-left: 0px;
+    }
+
+    .error404__parrafoError{
+        padding-left: 0px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .error404__contenedorImagen{
+        padding: 10px 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .error404__listadoEnlace{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .error404__parrafo404{
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .error404__contenedoresFila2{
+        height: 25px;
+    }
+}

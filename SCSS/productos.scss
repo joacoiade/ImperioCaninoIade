@@ -1,0 +1,119 @@
+$colorDefecto: white;
+$colorVariador: rgb(211, 199, 199);
+
+.inicioProductos{
+    margin:20px;
+}
+
+.producto{
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .producto__tituloProd{
+        width: 100%;
+        display: block;
+    }
+
+    .producto__listaProductos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+
+        .producto__items{
+            display: inline-block;
+            width: 32%;
+            height: 240px;
+            text-align: center;
+            justify-content: space-between;
+            min-width: 200px;
+            margin:5px;
+
+            .producto__atributos{
+                border: solid white 3px;
+                border-radius: 2%;
+                width: 100%;
+                height: 220px;
+                animation-name: bordear;
+                animation-delay: 0s;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+
+                .producto__imagen{
+                    margin:15px;
+                    margin-bottom: 5px;
+                    width: 100px;
+                    height: 100px;
+                    padding-left: 10px;
+                }
+                
+                .producto__imagen:hover{
+                    transform: scale(1.3);
+                }
+
+                div{
+                    text-align: left;
+                    margin-left: 10px;
+                    font-size: 0.9em;
+                }
+
+                .producto__disponibilidad {
+                    color: green;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bordear{
+    0%{
+        border-color: $colorDefecto;
+    }
+    25%{
+        border-color: $colorVariador;  
+    }
+    50%{
+        border-color: $colorDefecto;
+    }
+    75%{
+        border-color: $colorVariador;
+    }
+    100%{
+        border-color: $colorDefecto;  
+    }
+}
+
+@media only screen and (max-width:600px){
+    .encabezado--altura{
+        height: 2000px;
+    }
+    
+    .inicioProductos{
+        width: 75%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0px;
+    }
+    .producto{
+
+        .producto__listaProductos{
+
+            .producto__items{
+                min-width: 250px;
+                height: 200px;
+            
+                .producto__atributos{
+                    height: 200px;
+                    
+                    div{
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+}

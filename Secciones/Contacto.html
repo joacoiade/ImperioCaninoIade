@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" lang="es">
+	<title>Imperio Canino - Contacto</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Brindamos el servicio de hotelería para perros 
+	(incluye traslado, comida y baño). También productos para tu amigo canino.">
+	
+	<meta name="keywords" content="PERRO, CANINO, MASCOTA, ALIMENTO PERRO, ALIMENTO CANINO,
+	 HOTEL PERRO, HOTEL CANINO, TRANSPORTE PERRO, TRANSPORTE CANINO, CUIDADO CANINO,
+	 CUIDADO PERRO, VETERINARIO, VETERINARIA, ACCESORIOS CANINO, ACCESORIOS PERRO">
+	
+	<link rel="stylesheet" href="../Boostrap/css/bootstrap.min.css">
+	<script src="../Boostrap/js/bootstrap.min.js"></script>
+
+	<script src="../Boostrap/js/jquery-3.0.0.slim.min.js"></script>
+	<script src="../Boostrap/js/popper.min.js"></script>
+	
+	<link rel="stylesheet" href="../CSS/estilosCompartidos.css">
+	<link rel="stylesheet" href="../CSS/contacto.css">
+	
+	
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+	<header class="encabezado">
+		<div class="encabezado__titulo">
+			<div class="encabezado__contenedorTitulo">Imperio Canino</div>
+			<div class="encabezado__contendorEnlaces">
+				<a class="encabezado__enlace" href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square encabezado__redes"></i></a>
+				<a class="encabezado__enlace" href="http://instagram.com" target="_blank"><i class="fab fa-instagram encabezado__redes"></i></a>
+			</div>
+		</div>
+		<div class="encabezado__menu">
+			<div class="encabezado__logo"><a href="../index.html"><img class="encabezado__imagen" src="../Imagenes/IC.jpg" alt="Logo Imperio Canino"></a></div>
+			<nav class="encabezado__contenedorNaveg">
+				<ul class="encabezado__barraNaveg">
+					<li class="encabezado__itemBarraNaveg"><a href="../index.html">Inicio</a></li>
+					<li class="encabezado__itemBarraNaveg"><a href="Video.html">Videos</a>
+						<ul class="encabezado__barraNaveg">
+							<li class="encabezado__itemBarraNaveg"><a href="Video.html#video1">Video 1</a></li>
+							<li class="encabezado__itemBarraNaveg"><a href="Video.html#video2">Video 2</a></li>
+						</ul>
+					</li>
+					<li class="encabezado__itemBarraNaveg"><a href="Producto.html">Productos</a></li>
+					<li class="encabezado__itemBarraNaveg"><a href="Personal.html">Personal</a></li>
+					<li class="encabezado__itemBarraNaveg"><a href="Contacto.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main id="inicioContacto" class="inicioContacto">
+		<section id="contacto" class="contacto">
+			<article id="contacto__consulta" class="contacto__consulta">
+				<div>
+					<h1>Contacto</h1>
+					<hr>
+				</div>
+
+				<form class="contacto__formulario">
+					<div class="group-form">
+						<label>Nombre:</label>
+						<input type="text" name="nombre" class="form-control">
+					</div>
+					<div>
+						<label>Teléfono:</label>
+						<input type="numeric" name="telefono" class="form-control">
+					</div>
+					<div class="group-form">
+						<label>Email:</label>
+						<input type="email" name="mail" class="form-control">
+					</div>
+					<div>
+						<label>Barrio:</label>
+						  
+						<select class="form-control contacto__seleccion">
+							<option class="contacto__option" value="0" hidden>-- Seleccionar --</option>
+							<option class="contacto__option" value="1">Aguada</option>
+							<option class="contacto__option" value="2">Buceo</option>
+							<option class="contacto__option" value="3">Carrasco</option>
+							<option class="contacto__option" value="4">Centro</option>
+							<option class="contacto__option" value="5">Cordón</option>
+							<option class="contacto__option" value="6">La Blanqueada</option>
+							<option class="contacto__option" value="7">La Comercial</option>
+							<option class="contacto__option" value="8">Malvin</option>
+							<option class="contacto__option" value="9">Parque Batlle</option>
+							<option class="contacto__option" value="10">Parque Rodó</option>
+							<option class="contacto__option" value="11">Pocitos</option>
+							<option class="contacto__option" value="12">Prado</option>
+							<option class="contacto__option" value="13">Unión</option>
+							<option class="contacto__option" value="14">Otros</option>
+						</select>
+					</div>
+					<div>
+						<label>Motivo de Contacto:</label>
+					</div>
+					<div>
+						<input class="form-check-inline" type="checkbox" value="adiestramiento" name="adiestramiento">
+						<label>Adiestramiento</label>
+					</div>
+					<div>
+						<input class="form-check-inline" type="checkbox" value="hospedaje" name="hospedaje">
+						<label>Hospedaje</label>
+					</div>
+					<div>
+						<input class="form-check-inline" type="checkbox" value="producto" name="producto">
+						<label>Productos</label>
+					</div>
+					<div>
+						<input class="form-check-inline" type="checkbox" value="otros" name="otros">
+						<label>Otros</label>
+					</div>
+					<div>
+						<label>Comentarios</label>
+					</div>
+					<div>
+						<textarea id="contacto__comentario" class="form-control contacto__comentario contacto__comentario--altura" name="comentario" rows="5" cols="20" placeholder="Deje un comentario"></textarea>
+					</div>
+					<div class="contacto__contenedorBotones">	
+						<input type="submit" value="Enviar" class="contacto__botones">
+						<input type="reset" value="Borrar" class="contacto__botones"> 
+					</div>
+				</form>
+			</article>
+			<article id="ubicacion" class="ubicacion">
+				<div id="ubicacion__titulo">
+					<h1>Ubicación</h1>
+					<hr>
+				</div>
+				<div id="ubicacion__Contenedormapa" class="ubicacion__Contenedormapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1636.2684194615988!2d-56.15943814857436!3d-34.89297509687025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ff8151d207%3A0xbc09a44b536d2415!2sMonumento%20Al%20Maestro!5e0!3m2!1ses!2suy!4v1624206240289!5m2!1ses!2suy" id="ubicacion__mapa" class="ubicacion__mapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer class="piePagina">
+		<div class="piePagina__contenedor">
+			<hr class="piePagina__separadores">
+			<a class="piePagina__enlace" href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square piePagina__redes"></i></a>
+			<a class="piePagina__enlace" href="http://instagram.com" target="_blank"><i class="fab fa-instagram piePagina__redes"></i></a>
+		</div>
+	</footer>
+</body>
+</html>
