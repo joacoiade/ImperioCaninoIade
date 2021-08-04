@@ -1,3 +1,5 @@
+$colorFondo: rgb(173, 255, 173);
+
 * {
     padding: 0;
     margin:0;
@@ -8,7 +10,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgb(248, 124, 186), rgb(252, 115, 115), rgb(248, 124, 186), white);
+    background: linear-gradient(white 2px, $colorFondo, rgb(161, 247, 139), $colorFondo, white);
 }
 
 .encabezado{
@@ -26,7 +28,6 @@ body{
         justify-content: center;
         color: rgb(255, 217, 0);
         width: 70%;
-        background-color: white;
         font-size: 50px;
         font-weight: bold;    
         line-height: 70px;
@@ -176,7 +177,7 @@ section, article {
             position: relative;
 
             a {
-                color:white;
+                color: $colorFondo;
                 text-transform: uppercase;
                 text-decoration: none;
                 padding: 10px;
@@ -185,7 +186,7 @@ section, article {
 
             a:hover {
                 color: khaki;
-                border: solid white 3px;
+                border: solid $colorFondo 3px;
                 padding: 7px;
             }
 
@@ -196,7 +197,7 @@ section, article {
                 .encabezado__itemBarraNaveg{
                     font-size: 12px;
                     line-height: 30px;
-                    background-color: rgb(54, 1, 114);
+                    background-color: grey;
                     padding: 5px;
                     margin: 0px 15px;   
                     text-align: center;

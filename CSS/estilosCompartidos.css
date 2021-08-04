@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: linear-gradient(#f87cba, #fc7373, #f87cba, white);
+  background: linear-gradient(white 2px, #adffad, #a1f78b, #adffad, white);
 }
 
 .encabezado {
@@ -26,7 +26,6 @@ body {
   justify-content: center;
   color: #ffd900;
   width: 70%;
-  background-color: white;
   font-size: 50px;
   font-weight: bold;
   line-height: 70px;
@@ -150,7 +149,7 @@ section, article {
   position: relative;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a {
-  color: white;
+  color: #adffad;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
@@ -158,7 +157,7 @@ section, article {
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a:hover {
   color: khaki;
-  border: solid white 3px;
+  border: solid #adffad 3px;
   padding: 7px;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg {
@@ -168,7 +167,7 @@ section, article {
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {
   font-size: 12px;
   line-height: 30px;
-  background-color: #360172;
+  background-color: grey;
   padding: 5px;
   margin: 0px 15px;
   text-align: center;
