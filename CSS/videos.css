@@ -39,6 +39,13 @@ video {
     video{
         height: 250px;
     }
+
+    .videos__listaVideos{
+        display: flex;
+        flex-flow: column;
+        padding:0px;
+        margin: 0px;
+    }
 }
 
 @media only screen and (max-width: 600px){
