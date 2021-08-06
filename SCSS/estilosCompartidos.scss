@@ -1,4 +1,6 @@
-$colorFondo: rgb(173, 255, 173);
+$colorFondo: rgb(115, 250, 115);
+$colorRedesSeparadores: rgb(0, 68, 0);
+$colorTexto: white;
 
 * {
     padding: 0;
@@ -10,7 +12,10 @@ $colorFondo: rgb(173, 255, 173);
 }
 
 body{
-    background: linear-gradient(white 2px, $colorFondo, rgb(161, 247, 139), $colorFondo, white);
+    background-image: url("../Imagenes/Fondo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .encabezado{
@@ -25,8 +30,8 @@ body{
     .encabezado__titulo{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
-        color: rgb(255, 217, 0);
+        justify-content: flex-end;
+        color: $colorTexto;
         width: 70%;
         font-size: 50px;
         font-weight: bold;    
@@ -55,12 +60,12 @@ body{
                     height: 18px;
                     width: 18px;
                     font-size: 18px;
-                    color: blue;
+                    color: $colorRedesSeparadores;
                 }
             }
 
             .encabezado__enlace:hover{
-                opacity: 0.5;
+                opacity: 0.7;
             }
         }
     }
@@ -107,7 +112,7 @@ body{
         width: 98%;
 
         .piePagina__separadores{
-            border: 1px grey solid;
+            border: 1px $colorRedesSeparadores solid;
             margin: 2px;
         }
 
@@ -117,12 +122,12 @@ body{
                 height: 32px;
                 width: 32px;
                 font-size: 32px;
-                color: blue;
+                color: $colorRedesSeparadores;
             }
         }
 
         .piePagina__enlace:hover{
-            opacity: 0.5;
+            opacity: 0.7;
         }
     }
 }
@@ -159,7 +164,7 @@ section, article {
 .encabezado__contenedorNaveg {  
     width: 100%;
     height: 60px;
-    background-color: black;
+    background-color: $colorRedesSeparadores;
     padding-left: 10px;
     
     .encabezado__barraNaveg{
@@ -185,7 +190,7 @@ section, article {
             }
 
             a:hover {
-                color: khaki;
+                color: white;
                 border: solid $colorFondo 3px;
                 padding: 7px;
             }
@@ -213,7 +218,7 @@ section, article {
 }    
 
 h1 {
-    color:grey;
+    color:$colorRedesSeparadores;
     font-size: 1.3em;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -231,7 +236,7 @@ li{
 } 
 
 hr{
-    border: 2px solid grey;
+    border: 2px solid $colorRedesSeparadores;
     opacity: 1;
     margin: 5px 0px 10px 0px;
 }
@@ -366,7 +371,7 @@ hr{
                 }
 
                 a:hover {
-                    color: khaki;
+                    color:white;
                     border: solid white 0px;
                     padding: 0px;
                 }

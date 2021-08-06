@@ -38,16 +38,17 @@
   display: inline-block;
 }
 .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo {
-  color: #ffd900;
+  color: white;
   font-weight: bold;
   font-size: 35px;
+  font-family: "Kumar One", cursive;
 }
 .principal .principal__prodDestacados {
   width: 60%;
 }
 .principal .principal__prodDestacados .principal__verMas {
   border: 0px;
-  color: blue;
+  color: white;
   font-weight: bold;
   text-align: center;
   font-size: 20px;
@@ -57,8 +58,8 @@
   text-decoration: none;
 }
 .principal .principal__prodDestacados .principal__verMas a:hover {
-  color: blue;
-  opacity: 0.5;
+  color: white;
+  opacity: 0.7;
 }
 
 .experiencias {
@@ -73,29 +74,29 @@
 }
 .experiencias .experiencias__contenedor .experiencias__listado {
   padding-left: 5px;
-  background-color: white;
   padding: 5px;
   margin-right: 5px;
 }
 .experiencias .experiencias__contenedor .experiencias__listado .experiencias__listadoItems {
-  border: dashed 4px yellow;
+  border: dashed 4px white;
   border-radius: 5%;
   margin: 10px;
   padding: 10px;
   font-size: 20px;
   line-height: 28px;
+  background-color: #004400;
   animation-name: bordeado;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-duration: 1s;
 }
 .experiencias .experiencias__contenedor .experiencias__listado .experiencias__listadoItems .experiencias__nombre {
-  color: #3af0f0;
+  color: white;
   font-weight: bold;
   text-align: center;
 }
 .experiencias .experiencias__contenedor .experiencias__listado .experiencias__listadoItems .experiencias__descripcion {
-  color: darkslategray;
+  color: #73fa73;
   text-align: justify;
 }
 

@@ -8,7 +8,10 @@
 }
 
 body {
-  background: linear-gradient(white 2px, #adffad, #a1f78b, #adffad, white);
+  background-image: url("../Imagenes/Fondo1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .encabezado {
@@ -23,8 +26,8 @@ body {
 .encabezado .encabezado__titulo {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
-  color: #ffd900;
+  justify-content: flex-end;
+  color: white;
   width: 70%;
   font-size: 50px;
   font-weight: bold;
@@ -50,10 +53,10 @@ body {
   height: 18px;
   width: 18px;
   font-size: 18px;
-  color: blue;
+  color: #004400;
 }
 .encabezado .encabezado__titulo .encabezado__contendorEnlaces .encabezado__enlace:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 @keyframes titulo {
@@ -90,17 +93,17 @@ body {
   width: 98%;
 }
 .piePagina .piePagina__contenedor .piePagina__separadores {
-  border: 1px grey solid;
+  border: 1px #004400 solid;
   margin: 2px;
 }
 .piePagina .piePagina__contenedor .piePagina__enlace .piePagina__redes {
   height: 32px;
   width: 32px;
   font-size: 32px;
-  color: blue;
+  color: #004400;
 }
 .piePagina .piePagina__contenedor .piePagina__enlace:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 section, article {
@@ -131,7 +134,7 @@ section, article {
 .encabezado__contenedorNaveg {
   width: 100%;
   height: 60px;
-  background-color: black;
+  background-color: #004400;
   padding-left: 10px;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg {
@@ -149,15 +152,15 @@ section, article {
   position: relative;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a {
-  color: #adffad;
+  color: #73fa73;
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
   font-family: initial;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a:hover {
-  color: khaki;
-  border: solid #adffad 3px;
+  color: white;
+  border: solid #73fa73 3px;
   padding: 7px;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg {
@@ -178,7 +181,7 @@ section, article {
 }
 
 h1 {
-  color: grey;
+  color: #004400;
   font-size: 1.3em;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -196,7 +199,7 @@ li {
 }
 
 hr {
-  border: 2px solid grey;
+  border: 2px solid #004400;
   opacity: 1;
   margin: 5px 0px 10px 0px;
 }
@@ -304,7 +307,7 @@ hr {
     margin: 0px;
   }
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a:hover {
-    color: khaki;
+    color: white;
     border: solid white 0px;
     padding: 0px;
   }
