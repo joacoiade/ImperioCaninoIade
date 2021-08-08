@@ -186,7 +186,7 @@ h1 {
 }
 
 h2 {
-  color: #061c99;
+  color: white;
   font-weight: bold;
   font-size: 30px;
 }
@@ -240,6 +240,7 @@ hr {
 
   .encabezado__contenedorNaveg {
     margin: 0px 0px;
+    padding-left: 3px;
     line-height: 60px;
   }
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {

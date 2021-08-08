@@ -222,7 +222,7 @@ h1 {
 }
 
 h2 {
-    color:rgb(6, 28, 153);
+    color:$colorTexto;
     font-weight: bold;
     font-size: 30px;  
 }
@@ -298,6 +298,7 @@ hr{
 
     .encabezado__contenedorNaveg{
         margin: 0px 0px;
+        padding-left: 3px;
         line-height: 60px;
 
         .encabezado__barraNaveg{

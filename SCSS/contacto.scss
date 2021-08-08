@@ -1,3 +1,7 @@
+$colorFondo: rgb(115, 250, 115);
+$colorRedesSeparadores: rgb(0, 68, 0);
+$colorTexto: white;
+
 .inicioContacto{
     margin: 10px;
 }
@@ -15,8 +19,9 @@
             div{
                 
                 label{
-                font-weight: bold;
-                font-size: 20px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color:$colorTexto;
                 }
 
                 .contacto__seleccion{
@@ -30,14 +35,13 @@
 
                 .contacto__comentario{
                     width:100%;
-                    max-width: 450px;
                     height: 100px;
                 }
 
                 .contacto__botones{
                     font-size: 16px;
-                    background-color: blue;
-                    color: white;
+                    background-color: $colorFondo;
+                    color:$colorTexto;
                     font-weight: bold;
                     border-radius: 5px;
                     padding:6px;
@@ -48,6 +52,16 @@
                     font-size: 16px;
                     padding:6px;
                     opacity: 0.5;
+                }
+
+                .form-control{
+                    background-color: $colorRedesSeparadores;
+                    color: $colorFondo;
+                }
+
+                .contacto__opcionCheck{
+                    color: black;
+                    font-size: 16px;
                 }
             }
 

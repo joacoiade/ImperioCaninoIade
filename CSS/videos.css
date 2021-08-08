@@ -7,13 +7,13 @@
     height: 80vp;
 }
 
-video {
+.videos__video {
     width: 80%;
     height: 400px;
     background-color: white;
 }
 
-.videos h2{
+.videos .videos__tituloVideo{
     margin: 10px;
     font-size: 25px;
     text-align: start;
@@ -30,15 +30,12 @@ video {
 }
 
 @media only screen and (max-width: 1024px){
-    video{
+    .videos__video{
         height: 350px;
     }
 }
 
 @media only screen and (max-width: 768px){
-    video{
-        height: 250px;
-    }
 
     .videos__listaVideos{
         display: flex;
@@ -66,8 +63,7 @@ video {
         margin: 0px;
     }
 
-    .videos h2{
+    .videos .videos__tituloVideo{
         font-size: 20px;
     }
-
 }

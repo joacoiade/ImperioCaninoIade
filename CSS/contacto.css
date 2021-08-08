@@ -13,6 +13,7 @@
 .contacto .contacto__consulta .contacto__formulario div label {
   font-weight: bold;
   font-size: 20px;
+  color: white;
 }
 .contacto .contacto__consulta .contacto__formulario div .contacto__seleccion {
   width: 50%;
@@ -23,12 +24,11 @@
 }
 .contacto .contacto__consulta .contacto__formulario div .contacto__comentario {
   width: 100%;
-  max-width: 450px;
   height: 100px;
 }
 .contacto .contacto__consulta .contacto__formulario div .contacto__botones {
   font-size: 16px;
-  background-color: blue;
+  background-color: #73fa73;
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -39,6 +39,14 @@
   font-size: 16px;
   padding: 6px;
   opacity: 0.5;
+}
+.contacto .contacto__consulta .contacto__formulario div .form-control {
+  background-color: #004400;
+  color: #73fa73;
+}
+.contacto .contacto__consulta .contacto__formulario div .contacto__opcionCheck {
+  color: black;
+  font-size: 16px;
 }
 .contacto .contacto__consulta .contacto__formulario .contacto__contenedorBotones {
   margin-top: 5px;
