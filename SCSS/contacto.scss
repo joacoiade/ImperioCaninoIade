@@ -20,7 +20,7 @@ $colorTexto: white;
                 
                 label{
                     font-weight: bold;
-                    font-size: 20px;
+                    font-size: 1.25em;
                     color:$colorTexto;
                 }
 
@@ -28,7 +28,7 @@ $colorTexto: white;
                     width: 50%;
 
                     .contacto__option{
-                        font-size: 15px;
+                        font-size: 1em;
                         font-weight: bold;
                     }
                 }
@@ -39,8 +39,8 @@ $colorTexto: white;
                 }
 
                 .contacto__botones{
-                    font-size: 16px;
-                    background-color: $colorFondo;
+                    font-size: 1em;
+                    background-color: rgb(70, 247, 143);
                     color:$colorTexto;
                     font-weight: bold;
                     border-radius: 5px;
@@ -49,7 +49,7 @@ $colorTexto: white;
                 
                 .contacto__botones:hover{
                     border:white 2px solid;
-                    font-size: 16px;
+                    font-size: 1em;
                     padding:6px;
                     opacity: 0.5;
                 }
@@ -61,7 +61,7 @@ $colorTexto: white;
 
                 .contacto__opcionCheck{
                     color: black;
-                    font-size: 16px;
+                    font-size: 1em;
                 }
             }
 
@@ -122,15 +122,15 @@ $colorTexto: white;
                 div{
                     
                     label{
-                    font-size: 15px;
+                    font-size: 1em;
                     }
 
                    .contacto__botones{
-                        font-size: 13px;
+                        font-size: 0.9em;
                     }
 
                     .contacto__botones:hover{
-                        font-size: 13px;
+                        font-size: 0.9em;
                     }
 
                     .form-control{

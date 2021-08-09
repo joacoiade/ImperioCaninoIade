@@ -41,7 +41,7 @@ body{
             .piePagina__redes{
                 height: 32px;
                 width: 32px;
-                font-size: 32px;
+                font-size: 2em;
                 color: $colorRedesSeparadores;
             }
         }
@@ -91,7 +91,6 @@ section, article {
     padding-left: 10px;
     
     .encabezado__barraNaveg{
-        font-size: 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -101,7 +100,7 @@ section, article {
         height: 60px;
  
         .encabezado__itemBarraNaveg{
-            font-size: 24px;
+            font-size: 1.5em;
             line-height: 60px;
             height: 60px;
             position: relative;
@@ -125,7 +124,7 @@ section, article {
                 display:none;
 
                 .encabezado__itemBarraNaveg{
-                    font-size: 12px;
+                    font-size: 0.5em;
                     line-height: 30px;
                     background-color: grey;
                     padding: 5px;
@@ -146,7 +145,7 @@ section, article {
         flex-flow: row nowrap;
         justify-content: space-between;
         color: $colorTexto;
-        font-size: 25px;
+        font-size: 1.5em;
         line-height: 60px;
         font-weight: bold;    
         letter-spacing: 1px;
@@ -175,7 +174,7 @@ section, article {
                 .encabezado__redes{
                     height: 15px;
                     width: 15px;
-                    font-size: 15px;
+                    font-size: 0.65em;
                     color: $colorFondo;
                 }
             }
@@ -224,7 +223,7 @@ h1 {
 h2 {
     color:$colorTexto;
     font-weight: bold;
-    font-size: 30px;  
+    font-size: 2em;  
 }
 
 li{
@@ -255,22 +254,24 @@ hr{
         .encabezado__barraNaveg{
 
             .encabezado__itemBarraNaveg{
-                font-size: 18px;
+                font-size: 1em;
 
                 .encabezado__barraNaveg{
                     position: absolute;
                     display:none;
     
                     .encabezado__itemBarraNaveg{
-                        margin: 0px 5px;
+                        margin: 0px 0px;
+                        font-size: 0.65em;
+                        // padding: 5px;
                     }
                 }
             }
         }
         
         .encabezado__titulo {
-            font-size: 15px;
-            width: 145px;  
+            font-size: 1.1em;
+            width: 170px;  
 
             .encabezado__contendorEnlaces{
                 width: 18px;
@@ -280,7 +281,7 @@ hr{
                     .encabezado__redes{
                         height: 13px;
                         width: 13px;
-                        font-size: 13px;
+                        font-size: 0.75em;
                     }
                 }
             
@@ -304,19 +305,19 @@ hr{
         .encabezado__barraNaveg{
             
             .encabezado__itemBarraNaveg{
-                font-size: 13px;
+                font-size: 0.70em;
 
                 a{
-                    padding: 9px;
+                    padding: 10px;
                 }
 
                 .encabezado__barraNaveg{
 
                     .encabezado__itemBarraNaveg{
-                        font-size: 8px;
+                        font-size: 0.75em;
                         line-height: 26px;
                         text-align: center;
-                        margin: 0px 5px;
+                        margin: 0px 2px;
                         width: 60px;
                         height: 32px;
 
@@ -330,8 +331,21 @@ hr{
         }
 
         .encabezado__titulo{
-            font-size: 12px;
-            width: 125px;
+            font-size: 0.80em;
+            width: 130px;
+
+            .encabezado__contendorEnlaces{
+            
+                .encabezado__enlace{
+                    
+                    .encabezado__redes{
+                        height: 15px;
+                        width: 15px;
+                        font-size: 1em;
+                    }
+                }
+            
+            }
         }
     }       
 }

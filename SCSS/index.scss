@@ -39,13 +39,13 @@ $colorTexto: white;
             max-width: 100%;
             text-align: justify;
             line-height: 25px;
-            font-size: 25px;
+            font-size: 1.5em;
             display: inline-block;
 
             .principal__tituloParrafo{
                 color: $colorTexto;
                 font-weight: bold;
-                font-size: 35px;
+                font-size: 1.7em;
                 font-family: 'Kumar One', cursive;
             }
         }
@@ -59,7 +59,7 @@ $colorTexto: white;
             color: $colorTexto;
             font-weight: bold;
             text-align: center;
-            font-size: 20px;
+            font-size: 1.2em;
             height: 40px;
             vertical-align: bottom;
             padding: 8px 0px;
@@ -93,7 +93,7 @@ $colorTexto: white;
                 border-radius: 5%;
                 margin: 10px;
                 padding: 10px;
-                font-size: 20px;
+                font-size: 1.25em;
                 line-height: 28px;
                 background-color: $colorRedesSeparadores;
                 animation-name: bordeado;
@@ -148,7 +148,7 @@ $colorTexto: white;
 
             .principal__parrafoPresentacion{
                 .principal__tituloParrafo--tamaño{
-                    font-size: 25px;
+                    font-size: 1.5em;
                 }
             }
         }
@@ -159,7 +159,7 @@ $colorTexto: white;
         .experiencias__contenedor{
 
             .experiencias__listadoItems{    
-                font-size: 13px;
+                font-size: 0.75em;
                 line-height: 21px;
            }
         }
@@ -172,7 +172,7 @@ $colorTexto: white;
         .principal__prodDestacados{
     
             .principal__verMas{
-                font-size: 15px;
+                font-size: 1em;
             }
         }
     }
@@ -204,10 +204,10 @@ $colorTexto: white;
 
             .principal__parrafoPresentacion{
                 line-height: 20px;
-                font-size: 20px;
+                font-size: 1.25em;
     
                 .principal__tituloParrafo{
-                    font-size: 25px;
+                    font-size: 1.5em;
                 }
             }
         }

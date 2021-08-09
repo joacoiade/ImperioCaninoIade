@@ -34,7 +34,7 @@ body {
 .piePagina .piePagina__contenedor .piePagina__enlace .piePagina__redes {
   height: 32px;
   width: 32px;
-  font-size: 32px;
+  font-size: 2em;
   color: #004400;
 }
 .piePagina .piePagina__contenedor .piePagina__enlace:hover {
@@ -76,7 +76,6 @@ section, article {
   padding-left: 10px;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg {
-  font-size: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -86,7 +85,7 @@ section, article {
   height: 60px;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 60px;
   height: 60px;
   position: relative;
@@ -108,7 +107,7 @@ section, article {
   display: none;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {
-  font-size: 12px;
+  font-size: 0.5em;
   line-height: 30px;
   background-color: grey;
   padding: 5px;
@@ -125,7 +124,7 @@ section, article {
   flex-flow: row nowrap;
   justify-content: space-between;
   color: white;
-  font-size: 25px;
+  font-size: 1.5em;
   line-height: 60px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -150,7 +149,7 @@ section, article {
 .encabezado__contenedorNaveg .encabezado__titulo .encabezado__contendorEnlaces .encabezado__enlace .encabezado__redes {
   height: 15px;
   width: 15px;
-  font-size: 15px;
+  font-size: 0.65em;
   color: #73fa73;
 }
 .encabezado__contenedorNaveg .encabezado__titulo .encabezado__contendorEnlaces .encabezado__enlace:hover {
@@ -188,7 +187,7 @@ h1 {
 h2 {
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2em;
 }
 
 li {
@@ -210,18 +209,19 @@ hr {
   }
 
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {
-    font-size: 18px;
+    font-size: 1em;
   }
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg {
     position: absolute;
     display: none;
   }
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {
-    margin: 0px 5px;
+    margin: 0px 0px;
+    font-size: 0.65em;
   }
   .encabezado__contenedorNaveg .encabezado__titulo {
-    font-size: 15px;
-    width: 145px;
+    font-size: 1.1em;
+    width: 170px;
   }
   .encabezado__contenedorNaveg .encabezado__titulo .encabezado__contendorEnlaces {
     width: 18px;
@@ -229,7 +229,7 @@ hr {
   .encabezado__contenedorNaveg .encabezado__titulo .encabezado__contendorEnlaces .encabezado__enlace .encabezado__redes {
     height: 13px;
     width: 13px;
-    font-size: 13px;
+    font-size: 0.75em;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -244,16 +244,16 @@ hr {
     line-height: 60px;
   }
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {
-    font-size: 13px;
+    font-size: 0.7em;
   }
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a {
-    padding: 9px;
+    padding: 10px;
   }
   .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg {
-    font-size: 8px;
+    font-size: 0.75em;
     line-height: 26px;
     text-align: center;
-    margin: 0px 5px;
+    margin: 0px 2px;
     width: 60px;
     height: 32px;
   }
@@ -262,8 +262,13 @@ hr {
     margin: 0px 0px;
   }
   .encabezado__contenedorNaveg .encabezado__titulo {
-    font-size: 12px;
-    width: 125px;
+    font-size: 0.8em;
+    width: 130px;
+  }
+  .encabezado__contenedorNaveg .encabezado__titulo .encabezado__contendorEnlaces .encabezado__enlace .encabezado__redes {
+    height: 15px;
+    width: 15px;
+    font-size: 1em;
   }
 }
 @media only screen and (max-width: 600px) {

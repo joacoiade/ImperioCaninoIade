@@ -34,13 +34,13 @@
   max-width: 100%;
   text-align: justify;
   line-height: 25px;
-  font-size: 25px;
+  font-size: 1.5em;
   display: inline-block;
 }
 .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo {
   color: white;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 1.7em;
   font-family: "Kumar One", cursive;
 }
 .principal .principal__prodDestacados {
@@ -51,7 +51,7 @@
   color: white;
   font-weight: bold;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.2em;
   height: 40px;
   vertical-align: bottom;
   padding: 8px 0px;
@@ -82,7 +82,7 @@
   border-radius: 5%;
   margin: 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 28px;
   background-color: #004400;
   animation-name: bordeado;
@@ -126,17 +126,17 @@
     margin-bottom: 10px;
   }
   .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo--tamaño {
-    font-size: 25px;
+    font-size: 1.5em;
   }
 
   .experiencias .experiencias__contenedor .experiencias__listadoItems {
-    font-size: 13px;
+    font-size: 0.75em;
     line-height: 21px;
   }
 }
 @media only screen and (max-width: 768px) {
   .principal .principal__prodDestacados .principal__verMas {
-    font-size: 15px;
+    font-size: 1em;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -165,10 +165,10 @@
   }
   .principal .principal__presentacion .principal__parrafoPresentacion {
     line-height: 20px;
-    font-size: 20px;
+    font-size: 1.25em;
   }
   .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo {
-    font-size: 25px;
+    font-size: 1.5em;
   }
 }
 

@@ -15,7 +15,7 @@
   text-align: start;
 }
 .personal .personal__personas {
-  width: 95%;
+  width: 100%;
   border: white 3px double;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -73,13 +73,13 @@
     order: 2;
   }
   .personal .personal__personas .personal__descripcion h2 {
-    font-size: 25px;
+    font-size: 1.5em;
   }
   .personal .personal__personas .personal__descripcion h3 {
-    font-size: 15px;
+    font-size: 1em;
   }
   .personal .personal__personas .personal__descripcion p {
-    font-size: 13px;
+    font-size: 0.8em;
     margin-top: 2px;
   }
   .personal #persona1 .personal__contenedorImagen, .personal #persona2 .personal__contenedorImagen, .personal #persona3 .personal__contenedorImagen, .personal #persona4 .personal__contenedorImagen {
@@ -106,7 +106,7 @@
     text-align: center;
   }
   .personal .personal__personas .personal__descripcion h2 {
-    font-size: 16px;
+    font-size: 1em;
   }
   .personal .personal__personas .personal__descripcion p {
     display: none;

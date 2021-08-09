@@ -8,7 +8,7 @@
 }
 .videos .videos__tituloVideo {
   margin: 10px;
-  font-size: 25px;
+  font-size: 1.5em;
   text-align: start;
 }
 .videos .videos__listaVideos {
@@ -48,14 +48,14 @@
     margin: 0px;
   }
 
+  .videos .videos__tituloVideo {
+    font-size: 1.25em;
+  }
   .videos .videos__listaVideos {
     display: flex;
     flex-flow: column;
     padding: 0px;
     margin: 0px;
-  }
-  .videos .videos__listaVideos .videos__items .videos .videos__tituloVideo {
-    font-size: 20px;
   }
 }
 

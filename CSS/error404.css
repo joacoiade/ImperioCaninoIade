@@ -30,7 +30,7 @@ body {
   padding-right: 50px;
 }
 .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorImagen .error404__imagen {
-  font-size: 150px;
+  font-size: 10em;
   color: black;
 }
 .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorTexto {
@@ -41,14 +41,14 @@ body {
   margin-bottom: 0px;
 }
 .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorTexto .error404__parrafo404 {
-  font-size: 120px;
+  font-size: 7.5em;
   font-family: fantasy;
   color: cornflowerblue;
   margin-bottom: 0px;
   line-height: 100px;
 }
 .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorTexto .error404__parrafoError {
-  font-size: 35px;
+  font-size: 2.1em;
   color: crimson;
   padding-left: 60px;
   margin-bottom: 0px;
@@ -79,7 +79,7 @@ body {
     width: 100%;
   }
   .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorImagen .error404__imagen {
-    font-size: 75px;
+    font-size: 5em;
   }
   .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorTexto {
     text-align: center;
@@ -90,11 +90,11 @@ body {
   }
   .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorTexto .error404__parrafoError {
     padding-left: 0px;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 30px;
   }
   .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorTexto .error404__parrafo404 {
-    font-size: 80px;
+    font-size: 5em;
     line-height: 80px;
   }
   .error404 .error404__contenedor .error404__contenedoresFila2 {
