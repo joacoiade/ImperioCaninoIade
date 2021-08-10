@@ -17,27 +17,93 @@
 }
 .principal .principal__presentacion {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
-.principal .principal__presentacion .principal__tituloPresentacion {
+.principal .principal__presentacion .principal__contenedorPresentacion {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  height: 240px;
+}
+.principal .principal__presentacion .principal__contenedorPresentacion .principal__tituloPresentacion {
   width: 100%;
 }
-.principal .principal__presentacion .principal__imagenPresentacion {
+.principal .principal__presentacion .principal__contenedorPresentacion .principal__contenedorImagenPresentacion {
+  height: 100%;
   width: 45%;
-  height: 200px;
-  display: inline-block;
 }
-.principal .principal__presentacion .principal__parrafoPresentacion {
+.principal .principal__presentacion .principal__contenedorPresentacion .principal__contenedorImagenPresentacion .principal__imagenPresentacion {
+  height: 170px;
+  width: 100%;
+  display: inline-block;
+  border: 2px white solid;
+  border-radius: 2%;
+}
+.principal .principal__presentacion .principal__contenedorPresentacion .principal__contenedorImagenPresentacion .principal__imagenPresentacion:hover {
+  box-shadow: 1px 1px 20px 3px #004400;
+  transform: scale(1.05);
+}
+.principal .principal__presentacion .principal__contenedorPresentacion .principal__parrafoPresentacion {
   flex-basis: 50%;
   max-width: 100%;
   text-align: justify;
   line-height: 25px;
   font-size: 1.5em;
   display: inline-block;
+  margin: auto;
+  background-color: grey;
+  padding: 10px;
+  border-top-left-radius: 20% 50%;
+  border-bottom-right-radius: 20% 50%;
 }
-.principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo {
+.principal .principal__presentacion .principal__contenedorPresentacion .principal__parrafoPresentacion .principal__tituloParrafo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.7em;
+  font-family: "Kumar One", cursive;
+}
+.principal .principal__presentacion .principal__contenedorServicios {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+  height: 240px;
+}
+.principal .principal__presentacion .principal__contenedorServicios .principal__contenedorImagenPresentacion {
+  order: 2;
+  width: 45%;
+  height: 100%;
+  margin: auto;
+}
+.principal .principal__presentacion .principal__contenedorServicios .principal__contenedorImagenPresentacion .principal__imagenServicios {
+  width: 100%;
+  height: 170px;
+  margin-top: 45px;
+  border: 2px white solid;
+  border-radius: 2%;
+}
+.principal .principal__presentacion .principal__contenedorServicios .principal__contenedorImagenPresentacion .principal__imagenServicios:hover {
+  box-shadow: 1px 1px 20px 3px #004400;
+  transform: scale(1.05);
+}
+.principal .principal__presentacion .principal__contenedorServicios .principal__parrafoSerivios {
+  width: 50%;
+  order: 1;
+  text-align: justify;
+  line-height: 25px;
+  font-size: 1.5em;
+  display: inline-block;
+  background-color: grey;
+  border-top-left-radius: 20% 50%;
+  border-bottom-right-radius: 20% 50%;
+  padding: 15px;
+  margin-bottom: auto;
+}
+.principal .principal__presentacion .principal__contenedorServicios .principal__parrafoSerivios .principal__tituloParrafo {
   color: white;
   font-weight: bold;
   font-size: 1.7em;
@@ -109,23 +175,31 @@
   }
 }
 @media only screen and (max-width: 1024px) {
-  .principal .principal__presentacion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-  }
   .principal .principal__presentacion .principal__tituloPresentacion {
     width: 100%;
   }
-  .principal .principal__presentacion .principal__imagenPresentacion {
-    width: 90%;
-    height: 150%;
-    display: block;
-    margin-bottom: 10px;
+  .principal .principal__presentacion .principal__contenedorPresentacion {
+    height: 200px;
   }
-  .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo--tamaño {
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__contenedorImagenPresentacion .principal__imagenPresentacion {
+    height: 140px;
+  }
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__parrafoPresentacion {
+    font-size: 1em;
+  }
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__parrafoPresentacion .principal__tituloParrafo--tamaño {
+    font-size: 1.5em;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios {
+    height: 200px;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__contenedorImagenPresentacion .principal__imagenServicios {
+    height: 140px;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__parrafoSerivios {
+    font-size: 1em;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__parrafoSerivios .principal__tituloParrafo--tamaño {
     font-size: 1.5em;
   }
 
@@ -135,6 +209,54 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .principal .principal__presentacion .principal__contenedorPresentacion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__contenedorImagenPresentacion {
+    height: 150px;
+    width: 70%;
+    order: 2;
+    margin-top: 10px;
+  }
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__contenedorImagenPresentacion .principal__imagenPresentacion {
+    height: 150px;
+    width: 100%;
+    margin: auto;
+  }
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__parrafoPresentacion {
+    order: 1;
+    border-radius: 3% 3% 3% 3%;
+    width: 95%;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios {
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+    margin: 0%;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__contenedorImagenPresentacion {
+    order: 2;
+    width: 70%;
+    height: 150px;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__contenedorImagenPresentacion .principal__imagenServicios {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__parrafoSerivios {
+    order: 1;
+    height: auto;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 3% 3% 3% 3%;
+  }
   .principal .principal__prodDestacados .principal__verMas {
     font-size: 1em;
   }
@@ -163,12 +285,28 @@
   .principal .principal__presentacion {
     margin: 10px 0px 0px 0px;
   }
-  .principal .principal__presentacion .principal__parrafoPresentacion {
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__contenedorImagenPresentacion {
+    width: 95%;
+  }
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__parrafoPresentacion {
     line-height: 20px;
     font-size: 1.25em;
   }
-  .principal .principal__presentacion .principal__parrafoPresentacion .principal__tituloParrafo {
-    font-size: 1.5em;
+  .principal .principal__presentacion .principal__contenedorPresentacion .principal__parrafoPresentacion .principal__tituloParrafo {
+    font-size: 1.2em;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__contenedorImagenPresentacion {
+    width: 95%;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__parrafoSerivios {
+    line-height: 20px;
+    font-size: 1.25em;
+  }
+  .principal .principal__presentacion .principal__contenedorServicios .principal__parrafoSerivios .principal__tituloParrafo {
+    font-size: 1.2em;
+  }
+  .principal .principal__prodDestacados {
+    margin-top: 20px;
   }
 }
 
