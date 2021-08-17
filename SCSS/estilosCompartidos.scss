@@ -26,23 +26,36 @@ body{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    text-align: right;
+    background: linear-gradient(45deg, $colorRedesSeparadores, $colorTexto);
+    padding: 5px 0px 5px 5px;
 
     .piePagina__contenedor{
         width: 98%;
+        height: 36px;
 
-        .piePagina__separadores{
-            border: 1px $colorRedesSeparadores solid;
-            margin: 2px;
-        }
+        .piePagina__contenedorTexto{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:flex-end;
+            align-items: center;
 
-        .piePagina__enlace{
+            .piePagina__texto{
+                color: black;
+                font-weight: bold;
+                padding-right: 10px;
+                font-size: 1em;
+                line-height: 32px;
+                height: 16px;
+            }
 
-            .piePagina__redes{
-                height: 32px;
-                width: 32px;
-                font-size: 2em;
-                color: $colorRedesSeparadores;
+            .piePagina__enlace{
+
+                .piePagina__redes{
+                    height: 32px;
+                    width: 32px;
+                    font-size: 2em;
+                    color: $colorRedesSeparadores;
+                }
             }
         }
 
@@ -132,6 +145,15 @@ section, article {
                     text-align: center;
                     width:80px;
                     height: 40px;
+
+                    a{
+                        color: white;
+                    }
+
+                    a:hover{
+                        color: $colorFondo;
+                        border-color: $colorFondo;
+                    }
                 }
             }
         }
@@ -346,7 +368,20 @@ hr{
             
             }
         }
-    }       
+    }
+    
+    .piePagina{
+    
+        .piePagina__contenedor{
+    
+            .piePagina__contenedorTexto{
+                
+               .piePagina__texto{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -434,5 +469,20 @@ hr{
 
     h1{
         font-size: 1em;
+    }
+
+    .piePagina{
+
+        .piePagina__contenedor{
+            
+            .piePagina__contenedorTexto{
+
+               .piePagina__texto{
+                    font-size: 0.6em;
+                    line-height: 1.2em;
+                    height: 1em;
+                }
+            }
+        }
     }
 }

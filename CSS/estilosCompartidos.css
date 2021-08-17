@@ -22,16 +22,28 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  text-align: right;
+  background: linear-gradient(45deg, #004400, white);
+  padding: 5px 0px 5px 5px;
 }
 .piePagina .piePagina__contenedor {
   width: 98%;
+  height: 36px;
 }
-.piePagina .piePagina__contenedor .piePagina__separadores {
-  border: 1px #004400 solid;
-  margin: 2px;
+.piePagina .piePagina__contenedor .piePagina__contenedorTexto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
 }
-.piePagina .piePagina__contenedor .piePagina__enlace .piePagina__redes {
+.piePagina .piePagina__contenedor .piePagina__contenedorTexto .piePagina__texto {
+  color: black;
+  font-weight: bold;
+  padding-right: 10px;
+  font-size: 1em;
+  line-height: 32px;
+  height: 16px;
+}
+.piePagina .piePagina__contenedor .piePagina__contenedorTexto .piePagina__enlace .piePagina__redes {
   height: 32px;
   width: 32px;
   font-size: 2em;
@@ -115,6 +127,13 @@ section, article {
   text-align: center;
   width: 80px;
   height: 40px;
+}
+.encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a {
+  color: white;
+}
+.encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg a:hover {
+  color: #73fa73;
+  border-color: #73fa73;
 }
 .encabezado__contenedorNaveg .encabezado__barraNaveg .encabezado__itemBarraNaveg:hover ul {
   display: block;
@@ -270,6 +289,10 @@ hr {
     width: 15px;
     font-size: 1em;
   }
+
+  .piePagina .piePagina__contenedor .piePagina__contenedorTexto .piePagina__texto {
+    font-size: 0.8em;
+  }
 }
 @media only screen and (max-width: 600px) {
   .encabezado {
@@ -346,6 +369,12 @@ hr {
 
   h1 {
     font-size: 1em;
+  }
+
+  .piePagina .piePagina__contenedor .piePagina__contenedorTexto .piePagina__texto {
+    font-size: 0.6em;
+    line-height: 1.2em;
+    height: 1em;
   }
 }
 
