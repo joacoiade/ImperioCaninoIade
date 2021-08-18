@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #dddbdb;
+  background-color: rgba(221, 219, 219, 0.603);
 }
 
 .error404 {
@@ -20,6 +20,7 @@ body {
 .error404 .error404__contenedor {
   height: 50%;
   width: 100%;
+  background: linear-gradient(white, #73fa73, #027e02, #73fa73, white);
 }
 .error404 .error404__contenedor .error404__contenedoresFila1 {
   height: 80%;
@@ -32,6 +33,11 @@ body {
 .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorImagen .error404__imagen {
   font-size: 10em;
   color: black;
+  animation-name: cambiarColor;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .error404 .error404__contenedor .error404__contenedoresFila1 .error404__contenedorTexto {
   text-align: left;
@@ -61,7 +67,36 @@ body {
 .error404 .error404__contenedor .error404__contenedoresFila2 .error404__contenedorEnlace .error404__enlace {
   text-decoration: none;
 }
+.error404 .error404__contenedor .error404__contenedoresFila2 .error404__contenedorEnlace .error404__enlace:hover {
+  opacity: 0.5;
+}
 
+@keyframes cambiarColor {
+  0% {
+    color: black;
+    transform: rotate(0deg);
+  }
+  20% {
+    color: cornflowerblue;
+    transform: rotate(72deg);
+  }
+  40% {
+    color: crimson;
+    transform: rotate(144deg);
+  }
+  60% {
+    color: black;
+    transform: rotate(216deg);
+  }
+  80% {
+    color: cornflowerblue;
+    transform: rotate(288deg);
+  }
+  100% {
+    color: crimson;
+    transform: rotate(360deg);
+  }
+}
 @media only screen and (max-width: 600px) {
   .error404 .error404__contenedor {
     height: 70%;
