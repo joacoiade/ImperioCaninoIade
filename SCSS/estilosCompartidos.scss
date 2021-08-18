@@ -81,6 +81,10 @@ section, article {
         width: 100px;
         height: 60px;
         float: left;
+        animation-name: movimiento;
+        animation-delay: 0s;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
 
         .encabezado__imagen{
             width: 95px;
@@ -93,6 +97,24 @@ section, article {
         }
     }
 } 
+
+@keyframes movimiento{
+    0%{
+        transform: translate(0px, -15px);
+    }
+    25%{
+        transform: translate(0px, 15px);
+    }
+    50%{
+        transform: translate(0px, -10px);
+    }
+    75%{
+        transform: translate(0px, 10px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
 
 .encabezado__contenedorNaveg { 
     display: flex;
